@@ -1,0 +1,19 @@
+body {
+  margin: 2rem 0; font-family: sans-serif; text-align: center;
+  font-family: monospace;
+}
+.wave-container {
+  display: inline-block;
+  width: 700px; height: 60px; overflow: hidden;
+}
+.wave { display: block; height: auto; width: 700px; }
+.audioplayer {
+  display: block; width: 700px; max-width: 90vw;
+  margin: -30px auto 15px auto;
+}
+table { margin: 0px auto; text-align: left; width: 700px; }
+th { font-size: 20px; }
+td { font-size: 12px; }
+a { color: black; }
+.odd { background-color: #f4f4f4; color: black; }
+.even { background-color: white; color: #5c5c5c; }
