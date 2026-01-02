@@ -4,16 +4,20 @@ body {
 }
 .wave-container {
   display: inline-block;
-  width: 700px; height: 60px; overflow: hidden;
+  width: 700px; height: 90px; overflow: hidden;
 }
 .wave { display: block; height: auto; width: 700px; }
 .audioplayer {
   display: block; width: 700px; max-width: 90vw;
-  margin: -30px auto 15px auto;
+  margin: -25px auto 15px auto;
 }
 table { margin: 0px auto; text-align: left; width: 700px; }
+.cover-intro { border-collapse: collapse; }
 th { font-size: 20px; }
 td { font-size: 12px; }
+.cover { border: 1px solid; width: 233px; }
+.intro { vertical-align: top; padding: 10px; border: 1px solid; }
 a { color: black; }
 .odd { background-color: #f4f4f4; color: black; }
 .even { background-color: white; color: #5c5c5c; }
+img.cover { width: 233px; border: 0px; }
