@@ -17,6 +17,68 @@ body {
 }
 
 
+.V001 { color: #6F6F73; }
+.V002 { color: #674630; }
+.V003 { color: #3B2E2B; }
+.V004 { color: #5077CC; }
+.V005 { color: #3A797D; }
+.V006 { color: #396589; }
+.V007 { color: #000000; }
+.V008 { color: #AF9C9A; }
+.V009 { color: #000000; }
+.V010 { color: #473828; }
+.V011 { color: #748F47; }
+.V012 { color: #796E6A; }
+.V013 { color: #213456; }
+.V014 { color: #95322B; }
+.V015 { color: #5591D8; background: #F7D147; }
+.V016 { color: #000000; }
+.V017 { color: #BC6645; }
+.V018 { color: #203A76; }
+.V019 { color: #BCB7AC; }
+.V020 { color: #000000; }
+.V021 { color: #89634F; }
+.V022 { color: #8F5369; }
+.V023 { color: #6D7B7D; }
+.V024 { color: #3F402E; background: #C8C9AF; }
+.V025 { color: #758083; }
+.V026 { color: #6E6E6E; }
+.V027 { color: #BB995D; }
+.V028 { color: #5E6767; }
+.V029 { color: #A83940; }
+.V030 { color: #222224; }
+.V031 { color: #000000; }
+.V032 { color: #3F4D56; }
+.V033 { color: #000000; }
+.V034 { color: #5A4E61; }
+.V035 { color: #000000; }
+.V036 { color: #4541A1; }
+.V037 { color: #766565; }
+.V038 { color: #ACBC7C; }
+.V039 { color: #F2AFFA; }
+.V040 { color: #CD352F; }
+.V041 { color: #476F82; }
+.V042 { color: #8F8AC1; }
+.V043 { color: #000000; }
+.V044 { color: #D04555; }
+.V045 { color: #3B3B3B; }
+.V046 { color: #CA7977; }
+.V047 { color: #F3D669; }
+.V048 { color: #501A12; }
+.V049 { color: #BED083; }
+.V050 { color: #000000; }
+.V051 { color: #E049A7; }
+.V052 { color: #4BA59C; }
+.V053 { color: #F19C92; }
+.V054 { color: #BF7B74; }
+.V055 { color: #A72B17; }
+.V056 { color: #DB3C27; }
+.V057 { color: #ED6D57; }
+.V058 { color: #F19B3E; }
+.V059 { color: #8D265E; }
+.V060 { color: #B73B78; }
+.V061 { color: #DE68A5; }
+.V062 { color: #F093C4; }
 
 table {
   margin: 0px auto; text-align: left;
@@ -56,7 +118,8 @@ td.blk, tr.blk {
 }
 .links { text-shadow: none; }
 a { color: white; background: black; text-decoration: none }
-a:hover, a:focus { color: white; background: red; }
+a:hover { color: white; background: red; }
+a:focus { color: white; background: black; }
 .overlay {
   position: relative; top: 0px; left: 0px;
   color: black; background: white;
@@ -72,7 +135,19 @@ a:hover, a:focus { color: white; background: red; }
 
 .toggle-text { visibility: hidden; }
 .toggle-text:target { visibility: visible; }
-
+#tl:target ~ .show {
+  pointer-events: none;     /* disables hover + click */
+  background: #000000;         /* or black */
+  cursor: default;
+}
+.hide {
+  pointer-events: none;     /* dead initially */
+}
+#tl:target ~ .hide {
+  pointer-events: auto;
+  cursor: pointer;
+  color: #FFFFFF;
+}
 
 .ascii {
   display: inline-block;
