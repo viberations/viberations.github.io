@@ -3,7 +3,7 @@ html {
   margin: 0;
 }
 body {
-  position: relative;
+  position: relative; background: #f8f8f8;
   height: 100%; margin: 0; text-align: center; font-family: monospace;
 }
 
@@ -79,6 +79,8 @@ body {
 .V060 { color: #B73B78; }
 .V061 { color: #DE68A5; }
 .V062 { color: #F093C4; }
+.V063 { color: #CF88AB; }
+.V064 { color: #986C84; }
 
 table {
   margin: 0px auto; text-align: left;
@@ -118,6 +120,7 @@ td.blk, tr.blk {
 }
 .links { text-shadow: none; }
 a { color: white; background: black; text-decoration: none }
+.play { color: black; background: white; text-decoration: none }
 a:hover { color: white; background: red; }
 a:focus { color: white; background: black; }
 .overlay {
@@ -160,6 +163,20 @@ a:focus { color: white; background: black; }
 
 
 
+.typewriter {
+  font-family: monospace; overflow: hidden; display: inline-block;
+  vertical-align: -2px;
+  animation: typing 1s steps(80, end) forwards;
+}
+.typereader {
+  font-family: monospace; overflow: hidden; display: inline-block;
+  vertical-align: -2px;
+  animation: typing 1s steps(80, end) reverse forwards;
+}
+@keyframes typing {
+  from { clip-path: inset(0 100% 0 0); }
+  to   { clip-path: inset(0 0 0 0); }
+}
 
 
 .hl {
