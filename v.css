@@ -81,12 +81,13 @@ body {
 .V062 { color: #F093C4; }
 .V063 { color: #CF88AB; }
 .V064 { color: #986C84; }
+.V065 { color: #B8B8FF; }
 
 table {
   margin: 0px auto; text-align: left;
   width: 400px;
   height: 525px;
-  line-height: 13px; font-size: 13px;
+  line-height: 15px; font-size: 15px;
   border-spacing: 0;
   /* display: block; */
   /* outline: 2px solid blue; */
@@ -124,7 +125,7 @@ a { color: white; background: black; text-decoration: none }
 a:hover { color: white; background: red; }
 a:focus { color: white; background: black; }
 .overlay {
-  position: relative; top: 0px; left: 0px;
+  position: relative; top: 1px; left: 0px;
   color: black; background: white;
   /* text-shadow:  -1px -1px 0 #fff, 1px -1px 0 #fff, */
   /*               -1px  1px 0 #fff, 1px  1px 0 #fff; */
@@ -180,19 +181,15 @@ a:focus { color: white; background: black; }
 
 
 .hl {
-  position: absolute;
-  background: black;
-  color: white;
-  text-decoration: none;
-    padding: 0;
-  margin: 0;
+  position: absolute; background: black; color: white;
+  text-decoration: none; padding: 0; margin: 0;
 }
 
 /* Overlay for hover text */
 .ol {
   position: absolute;       /* always in same place */
-  top: 485px;
-  left: 16px;
+  top: 526px;
+  left: -15px;
   color: black;
   background: #F1F3F4;
   text-shadow: none;
