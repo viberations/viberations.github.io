@@ -82,6 +82,8 @@ body {
 .V063 { color: #CF88AB; }
 .V064 { color: #986C84; }
 .V065 { color: #B8B8FF; }
+.V066 { color: #8A8AFF; }
+.V067 { color: #5C5CFF; }
 
 table {
   margin: 0px auto; text-align: left;
@@ -99,6 +101,7 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: white;
   /* outline: 2px solid red; */
 }
 .table-container {
@@ -120,8 +123,9 @@ td.blk, tr.blk {
   background: black;
 }
 .links { text-shadow: none; }
-a { color: white; background: black; text-decoration: none }
-.play { color: black; background: white; text-decoration: none }
+a { color: white; background: black; text-decoration: none; }
+.play { color: black; background: white; text-decoration: none; }
+.inactive { color: grey; background: black; text-decoration: none; }
 a:hover { color: white; background: red; }
 a:focus { color: white; background: black; }
 .overlay {
