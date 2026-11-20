@@ -220,6 +220,13 @@ a:focus { color: white; background: black; }
   opacity: 0;
   text-decoration: none;
 }
+/* Safari / WebKit only (macOS & iOS) */
+@supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
+  .table-wrap > table {
+    margin-left: -62px;
+    margin-right: 0px;
+  }
+}
 
 /* Show overlay when hovering the preceding link */
 .hl:hover + .ol {
